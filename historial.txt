@@ -1,0 +1,830 @@
+ls
+tail -f /var/log/dmesg
+clear
+tail -f /var/log/dmesg
+jornalctl -fk | grep -i nic
+journalctl -fk | grep -i nic
+clear
+tree
+sudo apt install tree
+tree
+clear
+pwd
+ls
+mkdir clase4
+s
+ls
+cd clase4/
+ls
+mkdir practica
+ls
+cd practica/
+ls
+touch practica1.txt
+ls
+cat practica1.txt 
+cp practica1.txt practica2.txt
+ls
+rm practica1.txt 
+ls
+mv practica2.txt /home/osboxes/clase4
+ls
+cd ..
+ls
+rm practica
+rm -r practica
+ls
+mkdir facturas pedidos
+tree
+mkdir -p  clientes/{facturas,pedidos}
+tree
+mkdir -p {clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p gauto_1/contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p gauto_2/{mama/hijo{1..3},papa/{ahijado,hijo{1..3}}}
+tree
+cat /proc/cpuinfo | grep -i proce | awk ‘{print}’
+cat /proc/cpuinfo | grep -i proce | awk ‘'{print}'
+cat /proc/cpuinfo | grep -i proce| awk '{print}'
+cat /proc/cpuinfo | grep -i proce| awk '{print$2}'
+cat /proc/cpuinfo | grep -i proce| awk '{print32}'
+cat /proc/cpuinfo | grep -i proce| awk '{print3}'
+ls
+cd Docd Documents
+cd Documents
+ls
+echo "Buenos dias" > saludo1.txt
+echo "dias de la semana" > saludo2..txt
+echo "Todos los dias de la semana" > saludo3.txt
+echo "dias de la semana" > saludo2.txt
+ls
+rm saludo2..txt
+ls
+find -name "*.txt" | xargs cat
+echo "chau" > saludos4
+find -name "*.txt" | xargs grep "dias"
+find -name "*.txt" | xargs rm
+ls
+cd ..
+cat /etc/sudoers
+sudo cat /etc/sudoers
+sudo apt install vim
+sudo vim/etc/sudoers
+sudo apt install vim
+sudo vim /etc/sudoers
+ls -l /etc/sudoers.d
+cat /etc/sudoers.d/README
+sudo cat /etc/sudoers.d/README
+tail -f /var/log/dmesg
+journalctl -fk | grep -i nic
+ls
+cd clase4/
+ls
+tree
+clear
+cd ..
+cat /etc/passwd
+cat /etc/passwd | grep osboxes
+sudo cat /etc/shadow
+sudo su
+groupadd Alumnos
+sudo groupadd Alumnos
+cat /etc/group
+useradd -m -s /bin/bash -c "Alumno pepe" -G Alumnos pepe
+sudo useradd -m -s /bin/bash -c "Alumno pepe" -G Alumnos pepe
+tail /etc/passwd
+cat /etc/group
+id
+id pepe
+ls -l /home
+passwd pepe
+sudo passwd pepe
+su pepe
+sudo grep pepe /etc/shadow | awk -F ':' '{print $2}'
+sudo grep pepe /etc/shadow | awk -F ':' '{print}'
+sudo useradd -m -s /bin/bash -c "usuario juan" -p "$(sudo grep pepe /etc/shadow | awk -F ':' '{print $2}')" juan
+tail /etc/passwd
+usermod -G Alumnos juan
+sudo usermod -G Alumnos juan
+tail /etc/group
+usermod -s /bin/sh pepe
+sudo usermod -s /bin/sh pepe
+tail /etc/group
+tail /etc/passwd
+clear
+cat /etc/sudoers
+sudo cat /etc/sudoers
+vim /etc/sudoers
+sudo apt install vim
+sudo vim /etc/sudoers
+ls -l /etc/sudoers.d
+cat /etc/sudoers.d README
+sudo cat /etc/sudoers.d README
+sudo cat /etc/sudoers.d/README
+sudo visudo /etc/sudoers
+ls
+ls -l
+cd documents
+cd D
+cd Documents
+ls -l
+chown pepe saludos4
+sudo chown pepe saludos4
+ls -l
+chown :pepe saludos4
+sudo chown :pepe saludos4
+ls -l
+sudo chown osboxes:osboxes saludos4
+ls -l
+cd ..
+ls -l
+sudo chown -R pepe:pepe Documents/
+ls -l
+ls -l Documents
+cd Documents
+cd ..
+sudo chown -R osboxes:osboxes Documents/
+ls -l
+cd Documents
+ls -l
+chmod o+w saludos4
+ls -l
+chmod g-w saludos4
+ls -l
+chmod u+x saludos4
+ls -l
+chmod u-x saludos4
+ls -l
+chmod 700 saludos4 
+ls -l
+chmod 640 saludos4 
+ls -l
+ls -l /dev
+sudo fdisk -l
+sudo fdisk /dev/sdb
+sudo fdisk -l
+sudo mkfs -t ext4 /dev/sdb1
+sudo mkfs -t ext4 /dev/sdb2
+sudo mkfs -t ext4 /dev/sdb3
+sudo mkfs -t ext4 /dev/sdb4
+sudo mkdir -p /mnt/part{1..3}
+sudo ls -l /mnt/
+sudo mount /dev/sdb1 /mnt/part1
+sudo mount /dev/sdb2 /mnt/part2
+sudo mount /dev/sdb3 /mnt/part3
+lsblk -f
+clear
+pwd 
+echo "pwd" > script1
+cat script1
+bash script1
+echo "whoami" >> script1
+cat script1 
+bash script1 
+echo "ls -l" >> script1
+bash script1 
+vim script2
+cat script 2
+cat script2
+bash script2
+ls -l
+vim script2
+vim script4
+cat script4
+ls -l 
+chmod 764 script4
+ls -l 
+./script4
+vim script5.sh
+clear
+ls -l
+chmod 764 script5.sh
+ls -l
+./script5.sh 
+git status
+clear
+sudo lsblk -l
+sudo fdisk -l
+fdisk -l
+sudo fdisk -l
+sudo fdisk /dev/sdb
+sudo fdisk -l
+sudo mkfs -t ext4 /dev/sdb5
+sudo mkfs -t ext4 /dev/sdb6
+sudo ls-l /mnt
+sudo mkdir -p /mnt/{par5,par6}
+sudo ls -l /mnt
+sudo lsblk
+sudo mount /dev/sdb5 /mnt/par5
+sudo mount /dev/sdb6 /mnt/par6
+cat /etc/fstab
+echo "/dev/sdb2 /mnt/part2 ext4 default 0 0
+
+echo "/dev/sdb2 /mnt/part2 ext4 default 0 0"
+echo "/dev/sdb2 /mnt/part2 ext4 default 0 0" | sudo tee -a /etc/fstab
+cat etc/fstab
+cat /etc/fstab
+echo "/dev/sdb3 /mnt/part3 ext4 default 0 0" | sudo tee -a /etc/fstab
+cat /etc/fstab
+echo "/dev/sdb1 /mnt/part1 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb4 /mnt/part4 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb5 /mnt/part5 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb6 /mnt/part6 ext4 default 0 0" | sudo tee -a /etc/fstab
+cat /etc/fstab
+sudo lsblk
+echo "/dev/sdb1 /mnt/part1 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb2 /mnt/part2 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb3 /mnt/part3 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb4 /mnt/part4 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb5 /mnt/part5 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdb6 /mnt/part6 ext4 default 0 0" | sudo tee -a /etc/fstab
+sudo lsblk
+cat /etc/fstab
+sudo mount -a
+exit
+pwd
+mkdir repogit
+ls
+cd repogit/
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone https://github.com/Silvigauto/UTNFRA_SO_1P2C_2024_GAUTO.git
+ls
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+sudo ./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+ls
+cd UTN-FRA_SO_Examenes/
+[200~./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+cd ..
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+source  ~/.bashrc  && history -a
+ls
+cd UTN-FRA_SO_Examenes/
+Ls
+ls
+cd ..
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+sudo ./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+cd ..
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+cd RTA_ARCHIVOS_Examen_20241006/
+ls
+cat
+cd ..
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh ~/.bashrc && history -a
+source  ~/.bashrc  && history -a
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+tree
+cat RTA_SCRIPT_Examen_20241006/Punto_A.sh
+cd RTA_SCRIPT_Examen_20241006/
+cd Punto_A.sh
+cd ..
+cd..
+cd ..
+ls
+mkdir pruebas
+ls
+cd pruebas
+ls
+mkdir -p /Examenes_UTN/{alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesores
+sudo mkdir -p /Examenes_UTN/{alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesores
+tree
+sudo mkdir -p Examenes_UTN/{alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesores
+tree
+rm -r Examenes_UTN/
+rm Examenes_UTN/
+rm -r Examenes_UTN/
+y
+ls
+cd Examenes_UTN/
+tree
+cd ..
+ls
+rm -rf Examenes_UTN/
+sudo rm -rf Examenes_UTN/
+ls
+sudo mkdir -p /Examenes_UTN/{alumno_1/parcial_{1..3}},{alumno_2/parcial_{1..3}},{alumno_3/parcial_{1..3}},profesores
+tree
+sudo mkdir -p Examenes_UTN/{alumno_1/parcial_{1..3}},{alumno_2/parcial_{1..3}},{alumno_3/parcial_{1..3}},profesores
+tree
+sudo mkdir -p Examenes_UTN/{alumno_1/parcial_{1..3}},{alumno_2/parcial_{1..3}},{alumno_3/parcial_{1..3}},{profesores}
+tree
+rm -rf Examenes_UTN/
+sudo rm -rf Examenes_UTN/
+LS
+ls
+mkdir -p Examenes-UTN/alumno_1/parcial_{1..3} Examenes-UTN/alumno_2/parcial_{1..3} Examenes-UTN/alumno_3/parcial_{1..3} Examenes-UTN/profesor
+tree
+sudo rm -rf Examenes_UTN/
+ls
+sudo rm -rf Examenes-UTN/
+ls
+mkdir -p Examenes-UTN/alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesor
+tree
+sudo rm -rf Examenes-UTN/
+ls
+mkdir -p Examenes-UTN/{alumno_1/{parcial_1,parcial_2,parcial_3},alumno_2/{parcial_1,parcial_2,parcial_3},alumno_3/{parcial_1,parcial_2,parcial_3},profesor}
+tree
+sudo rm -rf Examenes-UTN/
+ls
+mkdir -p Examenes-UTN/{alumno_1/{parcial_{1..3}},alumno_2/{parcial_{1..3}},alumno_3/{parcial_{1..3}},profesor}
+tree
+mkdir -p Examenes-UTN/{alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesor}
+tree
+sudo rm -rf Examenes-UTN/
+ls
+mkdir -p /Examenes_UTN/{alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesores}
+sudo mkdir -p /Examenes_UTN/{alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesores}
+tree
+sudo mkdir -p Examenes_UTN/{alumno_1/parcial_{1..3},alumno_2/parcial_{1..3},alumno_3/parcial_{1..3},profesores}
+tree
+sudo rm -rf Examenes_UTN/
+ls
+vim scriptA
+cat scriptA 
+ls -l
+chmod 764 scriptA 
+ls
+./scriptA 
+tree
+cd ..
+ls
+cd repogit/
+ls
+tree
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+tree
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_A.sh 
+ls -l
+chmod 764 Punto_A.sh 
+LS -L
+ls- l
+ls -l
+cd ..
+ls -l /dev/
+sudo fdisk -l
+sudo fdisk /dev/sdd
+sudo fdisk -l
+sudo fdisk /dev/sdd 
+sudo fdisk -l
+sudo lsblk
+sudo mkfs -t ext4 /dev/sdd1
+sudo mkfs -t ext4 /dev/sdd2
+sudo mkfs -t ext4 /dev/sdd3
+sudo mkfs -t ext4 /dev/sdd5
+sudo mkfs -t ext4 /dev/sdd6
+sudo mkfs -t ext4 /dev/sdd7
+sudo mkfs -t ext4 /dev/sdd8
+sudo mkfs -t ext4 /dev/sdd9
+sudo mkfs -t ext4 /dev/sdd10
+sudo mkfs -t ext4 /dev/sdd11
+ls
+cd repogit
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+tree
+cd ..
+ls
+cd repogit
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+tree
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+./Punto_A.sh
+tree
+pwd
+cd ..
+sudo mount /dev/sdd1 /home/osboxes/repogit/UTNFRA_SO_1P2C_2024_GAUTO/RTA_SCRIPT_Examen_20241006
+ls
+cs repogit/
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+tree
+cd ..
+tree
+sudo umount /home/osboxes/repogit/UTNFRA_SO_1P2C_2024_GAUTO/RTA_SCRIPT_Examen_20241006
+cd ..
+cd..
+cd ..
+ls
+cd repogit/
+ls
+tree
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+tree
+cd RTA_SCRIPT_Examen_20241006/
+pwd
+sudo rm -rf Examenes_UTN
+tree
+cd ..
+tree
+cd RTA_SCRIPT_Examen_20241006/
+cat Punto_A.sh
+vim Punto_A.sh
+cat Punto_A.sh
+./Punto_A.sh
+cd ..
+tree
+cd ..
+ls
+sudo ls /Examenes_UTN
+sudo ls
+tree
+ls
+cd repogit/
+ls
+cs UTNFRA_SO_1P2C_2024_GAUTO/
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+tree
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_A.sh 
+cd ..
+sudo rm -rf /Examenes_UTN
+sudo ls /
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+./Punto_A.sh
+cd ..
+tree
+cd ..
+tree /Examenes_UTN
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+LS
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_A.sh
+cd ..
+sudo rm -rf Examenes_UTN
+sudo ls /
+sudo rm -rf /Examenes_UTN
+sudo ls /
+ls
+cd repogit
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+cd
+ls
+cd repogit
+cd UTNFRA_SO_1PC
+cd UTNFRA_SO_1PC_2024_GAUTO/
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+./Punto_A.sh
+cd ..
+tree /Examenes_UTN
+tree
+tree /Examenes_UTN
+ls -l
+sudo ls -la /
+sudo ls -l /
+cd /Examenes_UTN/
+tree
+pwd
+ls
+cd alumno_1
+ls
+cd parcial_1
+pwd
+cd ..
+cd /home/osboxes
+ls
+sudo lsblk
+cd /
+ls
+cd Examenes_UTN/
+ls
+cd ..
+cd /home/osboxes
+cd
+ls
+sudo mount /dev/sdd1 /Examenes_UTN/alumno_1/parcial_1
+lsblk
+sudo mount /dev/sdd2 /Examenes_UTN/alumno_1/parcial_2
+sudo mount /dev/sdd3 /Examenes_UTN/alumno_1/parcial_3
+sudo mount /dev/sdd5 /Examenes_UTN/alumno_2/parcial_1
+sudo mount /dev/sdd6 /Examenes_UTN/alumno_2/parcial_2
+sudo mount /dev/sdd7 /Examenes_UTN/alumno_2/parcial_3
+sudo mount /dev/sdd8 /Examenes_UTN/alumno_3/parcial_1
+sudo mount /dev/sdd9 /Examenes_UTN/alumno_3/parcial_2
+sudo mount /dev/sdd10 /Examenes_UTN/alumno_3/parcial_3
+sudo mount /dev/sdd11 /Examenes_UTN/profesores
+lsblk
+cat /etc/fstab
+echo "/dev/sdd1 /Examenes_UTN/alumno_1/parcial_1 ext4 default 0 0" | sudo tee -a /etc/fstab
+cat /etc/fstab
+echo "/dev/sdd2 /Examenes_UTN/alumno_1/parcial_2 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd3 /Examenes_UTN/alumno_1/parcial_3 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd5 /Examenes_UTN/alumno_2/parcial_1 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd6 /Examenes_UTN/alumno_2/parcial_2 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd7 /Examenes_UTN/alumno_2/parcial_3 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd8 /Examenes_UTN/alumno_3/parcial_1 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd9 /Examenes_UTN/alumno_3/parcial_2 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd10 /Examenes_UTN/alumno_3/parcial_3 ext4 default 0 0" | sudo tee -a /etc/fstab
+echo "/dev/sdd11 /Examenes_UTN/profesores ext4 default 0 0" | sudo tee -a /etc/fstab
+cat /etc/fstab
+sudo mount -a
+sudo lsblk
+lsblk -f
+cat /etc/fstab
+lsblk
+tree /Examenes_UTN
+cat /etc/fstab
+sudo ls -l /Examenes_UTN/alumno_1
+sudo ls -l /Examenes_UTN/alumno_2
+sudo ls -l /Examenes_UTN/alumno_3
+sudo ls -l /Examenes_UTN/alumno_4
+sudo ls -l /Examenes_UTN/profesores
+sudo blkid
+df -h
+cat /etc/fstab
+sudo cp /etc/fstab /etc/fstab.bak
+sudo vim /etc/fstab
+cat /etc/fstab
+sudo mount -a
+sudo vim /etc/fstab
+cat /etc/fstab
+cat /etc/fstab.bak
+sudo vim /etc/fstab
+sudo mount -a
+systemctl daemon-reload
+sudo mount -a
+sudo lsblk
+tree /Examenes-UTN/
+tree /Examenes_UTN/
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+tree
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_B.sh 
+chmod 764 Punto_B.sh 
+LS
+ls
+cd ..
+sudo cat /etc/sudoers
+clear
+ls -l
+/etc/shadow
+sudo /etc/shadow
+sudo cat /etc/shadow
+sudo grep osboxes /etc/shadow
+sudo groupadd p1c2_2024_gAlumno   
+sudo useradd -m -s /bin/bash -c "Alumno p1c2_2024_A1" -G p1c2_2024_gAlumno p1c2_2024_A1
+grep p1c2_2024_A1 /etc/passwd
+grep -i p1c2_2024_gAlumno /etc/group
+sudo cat /etc/shadow
+grep osboxes /etc/shadow | awk -F ':' '{print $2}
+
+
+grep osboxes /etc/shadow 
+sudp grep osboxes /etc/shadow | awk -F ':' '{print $2}
+sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}
+sudo grep osboxes /etc/shadow 
+grep pepe /etc/shadow | awk -F ':' '{print $2}'
+sudo grep pepe /etc/shadow | awk -F ':' '{print $2}'
+sudo grep pepe /etc/shadow 
+sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}'
+sudo userdel p1c2_2024_A1
+sudo tail /etc/passwd
+sudo useradd -m -s /bin/bash -c "p1c2_2024_A1" -p "$(sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A1
+sudo rm -r /home/p1c2_2024_A1
+sudo useradd -m -s /bin/bash -c "p1c2_2024_A1" -p "$(sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A1
+getent passwd p1c2_2024_A1
+sudo userdel -r p1c2_2024_A1
+getent passwd p1c2_2024_A1
+sudo useradd -m -s /bin/bash -c "p1c2_2024_A1" -p "$(sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A1
+sudo grep -E 'osboxes|p1c2_2024_A1' /etc/shadow|awk -F ':''{print$2}'
+sudo usermod -G p1c2_2024_gAlumno p1c2_2024_A1 
+tail /etc/group
+sudo useradd -m -s /bin/bash -c "p1c2_2024_A2" -p "$(sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A2
+sudo usermod -G p1c2_2024_gAlumno p1c2_2024_A2 
+sudo useradd -m -s /bin/bash -c "p1c2_2024_A3" -p "$(sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_A3
+sudo usermod -G p1c2_2024_gAlumno p1c2_2024_A3 
+sudo useradd -m -s /bin/bash -c "p1c2_2024_P1" -p "$(sudo grep osboxes /etc/shadow | awk -F ':' '{print $2}')" p1c2_2024_P1
+sudo groupadd p1c2_2024_gProfesores
+sudo usermod -G p1c2_2024_gProfesores p1c2_2024_P1 
+id p1c2_2024_A2
+groups p1c2_2024_A2
+groups p1c2_2024_P1
+cd
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+ls
+tree
+cd ..
+ls -l /
+cd Examenes_UTN
+cd /Examenes_UTN
+ls -l
+tree
+ls -ld /Examenes_UTN/alumno_1
+ls -ld
+ls -l
+chown p1c2_2024_A1:p1c2_2024_A1 /Examenes_UTN/alumno_1
+sudo chown p1c2_2024_A1:p1c2_2024_A1 /Examenes_UTN/alumno_1
+ls -l
+sudo chown p1c2_2024_A2:p1c2_2024_A2 /Examenes_UTN/alumno_2
+ls -l
+sudo chown p1c2_2024_A3:p1c2_2024_A3 /Examenes_UTN/alumno_3
+ls -l
+sudo chown p1c2_2024_P1:p1c2_2024_gProfesores /Examenes_UTN/profesores
+ls -l
+sudo chmod -R 750 /Examenes-UTN/alumno_1
+sudo chmod -R 750 /Examenes_UTN/alumno_1
+ls -l
+sudo chmod -R 760 /Examenes_UTN/alumno_2
+ls -l
+sudo chmod -R 700 /Examenes_UTN/alumno_3
+ls -l
+sudo chmod -R 775 /Examenes_UTN/profesores
+ls -l
+ls
+cd alumno_1
+whoami
+sudo cd alumno_1
+whoami
+cd ..
+su p1c2_2024_A1
+su p1c2_2024_A2
+sudo su -c whoami
+sudo -su c "whoami > /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A1
+cd /home/osboxes
+sudo -su c "whoami > /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A1
+sudo su c "whoami > /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A1
+sudo su -c "whoami > /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A1
+sudo su -c "whoami > /Examenes_UTN/alumno_2/validar.txt" p1c2_2024_A2
+sudo su -c "whoami > /Examenes_UTN/alumno_3/validar.txt" p1c2_2024_A3
+sudo su -c "whoami > /Examenes_UTN/profesores/validar.txt" p1c2_2024_P1
+cat validar.txt
+cat /Examenes_UTN/alumno_1/validar.txt
+sudo cat /Examenes_UTN/alumno_1/validar.txt
+sudo su -c "whoami > /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A1
+sudo su -c "whoami >> /Examenes_UTN/alumno_2/validar.txt" p1c2_2024_A2
+sudo su -c "whoami >> /Examenes_UTN/alumno_3/validar.txt" p1c2_2024_A3
+sudo su -c "whoami >> /Examenes_UTN/profesores/validar.txt" p1c2_2024_P1
+cat /Examenes_UTN/alumno_1/validar.txt
+sudp cat /Examenes_UTN/alumno_1/validar.txt
+sudo cat /Examenes_UTN/alumno_1/validar.txt
+ls -l /
+cd /Examenes_UTN/
+ls -l
+sudo su -c "whoami > /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A1
+sudo su -c "whoami > /Examenes_UTN/alumno_2/validar.txt" p1c2_2024_A2
+sudo su -c "whoami > /Examenes_UTN/alumno_3/validar.txt" p1c2_2024_A3
+sudo su -c "whoami > /Examenes_UTN/profesores/validar.txt" p1c2_2024_P1
+cat /Examenes_UTN/alumno_2/validar.txt
+sudo cat /Examenes_UTN/alumno_2/validar.txt
+sudo su -c "whoami > /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A1
+sudo su -c "whoami >> /Examenes_UTN/alumno_1/validar.txt" p1c2_2024_A2
+sudo chown p1c2_2024_A3:p1c2_2024_A3 /Examenes_UTN/alumno_3
+sudo cat /Examenes_UTN/alumno_1/validar.txt
+cd ..
+exit
+mkdir -p ~/Estructura_Asimetrica/{correo,clientes}/{cartas_{1..100},carteros_{1..10}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+tree
+[200~rm -r ~/Estructura_Asimetrica
+rm -r ~/Estructura_Asimetrica
+sudo mkdir -p ~/Estructura_Asimetrica/{correo/{cartas_{1..100},carteros_{1..10}},clientes/{cartas_{1..100}}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+rm -r ~/Estructura_Asimetrica
+sudo rm -r ~/Estructura_Asimetrica
+sudo mkdir -p ~/Estructura_Asimetrica/{correo/{cartas_{1..100},carteros_{1..10}},clientes/cartas_{1..100}}
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+tree Estructura_Asimetrica/
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_GAUTO/
+git status
+git add .
+git status
+git commit -m "punto a-d"
+git config --global user.email "silvigauto02@gmail.com"
+git config --global user.name "Silvigauto"
+git status
+git commit -m "punto a-d"
+git status
+git push
+git status
+git push
+ls
+tree
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_C.sh
+cat Punto_B.sh
+vim Punto_C.sh
+vim Punto_D.sh
+git status
+git add .
+git commit -m "punto c-d scripts"
+git status
+git push
+cd ..
+tree
+cd RTA_ARCHIVOS_Examen_20241006/
+ls
+/proc/meminfo
+sudo /proc/meminfo
+sudo cat /proc/meminfo
+sudo cat /proc/meminfo | grep -i RAM
+sudo cat /proc/meminfo | grep -i memtotal
+sudo cat /proc/meminfo | grep -i memtotal | awk -F ':' '{print$2}'
+sudo cat /proc/meminfo | grep -i memtotal | awk -F ':' '{print$2}' > Filtro_Basico.txt
+cat Filtro_Basico.txt 
+dmidecode -t chassis
+sudo dmidecode -t chassis
+sudo dmidecode -t chassis | grep -i manufacturer
+sudo dmidecode -t chassis | grep -i manufacturer >> Filtro_Basico.txt 
+cat Filtro_Basico.txt 
+cd ..
+ls
+tree
+cd RTA_SCRIPT_Examen_20241006/
+chmod +x Punto_C.sh
+tree
+chmod +x Punto_D.sh
+tree
+vim Punto_E.sh 
+chmod +x Punto_E.sh
+tree
+cd ..
+git status
+git add .
+git commit -m "punto c-e con permisos de ejecucion"
+git status
+git push
+tree
+cd RTA_ARCHIVOS_Examen_20241006/
+ls
+curl -s ifconfig.me
+sudo apt install curl
+curl -s ifconfig.me
+echo "mi ip publica es: $(curl -s ifconfig.me)" > Filtro_Avanzado.txt
+sudo grep $(whoami) /etc/shadow | awk -F ':' '{print $2}'
+echo "el hash de mi usuario es: $(sudo grep $(whoami) /etc/shadow | awk -F ':' '{print $2}')" >> Filtro_Avanzado.txt 
+git remote get-url origin 
+echo "la url de mi repositorio es: $(git remote get-url origin)" >> Filtro_Avanzado.txt 
+cat Filtro_Avanzado.txt 
+cd ..
+cd ~/repogit/UTNFRA_SO_1P2C_2024_GAUTO/RTA_ARCHIVOS_Examen_20241006
+cd ..
+cd RTA_SCRIPT_Examen_20241006/
+tree
+vim Punto_F.sh 
+chmod +x Punto_F.sh
+ls
+git status
+git commit -m "script punto F"
+git add .
+git commit -m "script punto F"
+git push
+cd ..
+ls
+vim README.md
+cat README.md 
+history -a
