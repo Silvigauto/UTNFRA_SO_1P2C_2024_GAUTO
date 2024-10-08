@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo fdisk /dev/sdd
+sudo fdisk /dev/sdd << EOF
 n
 p
 
@@ -41,6 +41,7 @@ n
 
 
 w
+EOF
 
 sudo mkfs -t ext4 /dev/sdd1
 
