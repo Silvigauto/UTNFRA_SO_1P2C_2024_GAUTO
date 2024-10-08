@@ -28,7 +28,7 @@ sudo chown p1c2_2024_A3:p1c2_2024_A3 /Examenes_UTN/alumno_3
 
 sudo chown p1c2_2024_P1:p1c2_2024_gProfesores /Examenes_UTN/profesores
 
-sudo chmod -R 750 /Examenes-UTN/alumno_1
+sudo chmod -R 750 /Examenes_UTN/alumno_1
 
 sudo chmod -R 760 /Examenes_UTN/alumno_2
 
