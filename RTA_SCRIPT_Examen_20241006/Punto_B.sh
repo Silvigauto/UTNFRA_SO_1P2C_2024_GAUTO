@@ -1,49 +1,44 @@
 #!/bin/bash
 sudo fdisk /dev/sdd
-
 n
-
 p
 
+
 +1G
-
 n
-
 p
 
+
 +1G
-
 n
-
 p
 
+
 +1G
-
 n
-
 e
 
-n
-
-+1G
 
 n
 
 +1G
-
 n
 
 +1G
-
 n
 
 +1G
-
 n
 
 +1G
-
 n
+
++1G
+n
+
++1G
+n
+
 
 w
 

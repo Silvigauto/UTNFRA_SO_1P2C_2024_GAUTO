@@ -2,7 +2,7 @@
 
 sudo apt install curl
 
-cd **~/repogit/UTNFRA_SO_1P2C_2024_GAUTO/RTA_ARCHIVOS_Examen_20241006**
+cd ~/repogit/UTNFRA_SO_1P2C_2024_GAUTO/RTA_ARCHIVOS_Examen_20241006
 
 echo "mi ip publica es: $(curl -s ifconfig.me)" > Filtro_Avanzado.txt
 
